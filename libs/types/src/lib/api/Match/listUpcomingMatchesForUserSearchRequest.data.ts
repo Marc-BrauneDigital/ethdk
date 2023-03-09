@@ -4,14 +4,9 @@ import { PaginatedSearchRequestData } from './../Request/paginatedSearchRequest.
 export interface ListUpcomingMatchesForUserSearchRequestData extends PaginatedSearchRequestData {
 
     /**
-     * @default ["preparing","started"]
+     * @default "preparing"
      */
-    status?: any;
-
-    /**
-     * @default null
-     */
-    tournament?: string | null;
+    status?: string;
 
     /**
      * @default "asc"
